@@ -187,6 +187,16 @@ knitr::include_graphics(here('images', 'cirs.png'))
 
 ```
 
+## O Professor
+
+__Ricardo de Souza Kuchenbecker__
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='80%', out.height='80%', paged.print=FALSE}
+
+knitr::include_graphics(here('images', 'Ricardo2.jpg'))
+
+```
+
 <!-- ## ELSA - Brasil -->
 <!-- ### Uma propaganda: mural de bolsas da UFRGS -->
 

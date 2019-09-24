@@ -2,10 +2,10 @@ library(here)
 library(rmarkdown)
 
 pasta <- "Rmds"
-# arquivo <- "00_apresenta_curso"
+arquivo <- "00_apresenta_curso"
 # arquivo <- "01_um_ensaio_aleatorizado"
 # arquivo <- "02_estrutura"
-arquivo <- "03_inferencia_causal_em_experimentos_aleatorizados"
+# arquivo <- "03_inferencia_causal_em_experimentos_aleatorizados"
 # arquivo <- "05_entre_estudos_observacionais_e_experimentos"
 
 arquivo_rmd <- paste0(arquivo, ".Rmd")

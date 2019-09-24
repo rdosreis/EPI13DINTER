@@ -100,6 +100,12 @@ knitr::include_graphics(here('images', 'cirs.png'))
 
 
 
+## ----echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='80%', out.height='80%', paged.print=FALSE----
+
+knitr::include_graphics(here('images', 'Ricardo2.jpg'))
+
+
+
 ## ----echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='100%', paged.print=FALSE----
 knitr::include_graphics(here('images','books.png'))
 
