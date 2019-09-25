@@ -94,17 +94,17 @@ $$
 - O que buscaremos, em termos de delineamento/métodos, em estudos observacionais para concluirmos a respeito de associações causais?
 - Qual a crítica central em um estudo observacional?
 
-# Avisos
+<!-- # Avisos -->
 
-## Avisos
+<!-- ## Avisos -->
 
-- __Próxima semana:__ não haverá aula!
-- __Para casa (para entregar):__ (1) Ler a Seção "Crying Babies" do Capítulo 5 do livro do Paul R. Rosenbaum e fazer um resumo. (2) Realize uma pequena pesquisa sobre o Paradoxo de Simpson. (3) Escreva um código para reproduzir os dados simulados da Tabela 5.1.
-- __Para casa:__ Ler o restante do Capítulo 5.
-    + Ler o artigo "Statistics and Causal Inference" do Paul Holland.
-- __Próxima aula (02/10):__ Continuação da discussão do Capítulo 5 do livro do Paul R. Rosenbaum.
+<!-- - __Próxima semana:__ não haverá aula! -->
+<!-- - __Para casa (para entregar):__ (1) Ler a Seção "Crying Babies" do Capítulo 5 do livro do Paul R. Rosenbaum e fazer um resumo. (2) Realize uma pequena pesquisa sobre o Paradoxo de Simpson. (3) Escreva um código para reproduzir os dados simulados da Tabela 5.1. -->
+<!-- - __Para casa:__ Ler o restante do Capítulo 5. -->
+<!--     + Ler o artigo "Statistics and Causal Inference" do Paul Holland. -->
+<!-- - __Próxima aula (02/10):__ Continuação da discussão do Capítulo 5 do livro do Paul R. Rosenbaum. -->
 
-## Por hoje é só!
+## Por enquanto é só!
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='100%', out.height='80%', paged.print=FALSE, purl=FALSE}
 
