@@ -13,7 +13,7 @@ date: |
   | Vitória da Conquista, 2019
 ---
 
-# Ausência efeito é plausível?
+# Ausência de efeito é plausível?
 
 ## Os protocolos agressivo e menos agressivo são equivalentes?
 
@@ -47,7 +47,7 @@ round(prop.table(table(Z, R), margin = 1) * 100, 2)
 
 ## Os protocolos agressivo e menos agressivo são equivalentes?
 
-- Estamos perguntando se taxas de mortalidade de 21,0% e 18,2% poderiam facilmente surgir por acaso __se a hipótese nula__ de __Fisher__ de __ausência (nenhum) efeito__ de tratamento fosse verdadeira.
+- Estamos perguntando se taxas de mortalidade de 21,0% e 18,2% poderiam facilmente surgir por acaso __se a hipótese nula__ de __Fisher__ de __ausência de (nenhum) efeito__ de tratamento fosse verdadeira.
 - A hipótese $H_0$ de Fisher de ausência efeito afirma que $r_{T_i} = r_{C_i}$ para todo $i$, $i = 1, \ldots , I$, em que  $I = 885$ no estudo ProCESS.
     + Isso diz que o paciente $i$ pode morrer ou não, mas a sobrevivência do paciente $i$ sob tratamento agressivo, $r_{T_i}$, é a mesma que a sobrevivência do paciente $i$ sob o tratamento menos agressivo, $r_{C_i}$.
 - Equivalentemente, a hipótese $H_0$ de Fisher de ausência efeito afirma que a diferença de efeito, $\delta_i = r_{T_i} - r_{C_i}$, é zero para cada paciente, $H_0: \delta_i = 0, i = 1, \ldots, I$.
@@ -89,21 +89,21 @@ knitr::include_graphics(here('images', 'process_mortality_outcomes_tn.png'))
     
 ## O ensaio de uniformidade e a hipótese de Fisher
 
-- Se o estudo ProCESS fosse um ensaio de uniformidade, em que todos os indivíduos recebesse o protocolo menos agressivo, então $R_i = r_{C_i}$ e $T^{*} = \sum_{i=1}^I{Z_iR_i} = \sum_{i=1}^I{Z_ir_{C_i}}$.
+- Se o estudo ProCESS fosse um ensaio de uniformidade, em que todos os indivíduos recebessem o protocolo menos agressivo, então $R_i = r_{C_i}$ e $T^{*} = \sum_{i=1}^I{Z_iR_i} = \sum_{i=1}^I{Z_ir_{C_i}}$.
     + __Não vemos__ $T^{*}$ porque é o número de mortes que teria ocorrido entre as pessoas do grupo de tratamento agressivo se elas fossem tratadas usando o protocolo menos agressivo..
 - Se a hipótese de Fisher de ausência de efeito, $H_0$, fosse verdadeira, então $r_{T_i} = r_{C_i}$ para todo $i$, $i = 1, \ldots, I = 885$, e assim $T = T^{*}$.
     + Portanto, testar a hipótese de nenhum efeito consiste em perguntar se $T$ exibe o tipo de comportamento que esperaríamos de $T^{*}$ em um teste de uniformidade, um teste sem efeito de tratamento, ou se precisamos acreditar em $r_{T_i} \neq r_{C_i}$ para algum paciente $i$ se quisermos entender o comportamento de $T$.
     
 ## O ensaio de uniformidade e a hipótese de Fisher
 
-- A quantidade $A = \sum_{i=1}^I{Z_i\delta_i} = T - T^{*}$ é chamada de __efeito atribuível__: é o aumento líquido de mortes no grupo tratado causado pelo recebimento de tratamento e não de controle.
-    + __Não vemos__ $A$, pois não vemos $T^{*}$.
-    + Se a hipótese de nenhum efeito de Fisher fosse verdadeira, $r_{T_i} = r_{C_i}$ para cada paciente $i$, $i = 1, \ldots, I = 885$ e $A = 0$.
+<!-- - A quantidade $A = \sum_{i=1}^I{Z_i\delta_i} = T - T^{*}$ é chamada de __efeito atribuível__: é o aumento líquido de mortes no grupo tratado causado pelo recebimento de tratamento e não de controle. -->
+<!--     + __Não vemos__ $A$, pois não vemos $T^{*}$. -->
+<!--     + Se a hipótese de nenhum efeito de Fisher fosse verdadeira, $r_{T_i} = r_{C_i}$ para cada paciente $i$, $i = 1, \ldots, I = 885$ e $A = 0$. -->
 - Se a hipótese de Fisher de ausência de tratamento é verdadeira, então vemos o efeito causal $(r_{T_i}, r_{C_i})$ para todo $i$, pois $r_{T_i} = r_{C_i}$.
     + Neste caso, a Tabela 3.1 seria o resultado de um ensaio de uniformidade, pois $r_{T_i} = r_{C_i}$.
 - Se a Tabela 3.1 tivesse vindo de um estudo de uniformidade __(ausência de efeito)__, qual é a chance de haver 92 ou mais mortes no grupo de tratamento agressivo?
 
-# Testando nenhum efeito: um exemplo pequeno
+# Testando ausência de efeito: um exemplo pequeno
 
 ## Possíveis atribuições de tratamento e suas probabilidades
 
@@ -229,7 +229,7 @@ knitr::include_graphics(here('images', 'small_example_t_dist_resumo.png'))
 - A palavra "exato" significa que a distribuição na Tabela 3.5 é exatamente a distribuição da estatística de teste $T$ em um experimento completamente aleatorizado quando a hipótese nula de Fisher é verdadeira.
     + Ou seja, a Tabela 3.5 é exatamente a distribuição nula de $T$, e não uma aproximação à sua distribuição nula.
 - As aproximações são amplamente usadas em inferência estatística e, em geral, quando essas aproximações são bem projetadas, elas funcionam bem.
-    + (Voltaremos a este tópico nas próximas aulas).
+    <!-- + (Voltaremos a este tópico nas próximas aulas). -->
 
 ## Teste exato de Fisher: a "base racional para inferência"
 
@@ -284,7 +284,7 @@ fisher.test(ProCESS, alternative = "greater")
 <!--     + A discussão deste capítulo será condizida pelos estudantes da turma. -->
 <!--     + Ver Cap. 1 do livro __"Statistics: a guide to the unknown"__. -->
 
-## Por hoje é só!
+## Por enquanto é só!
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width='50%', out.height='80%', paged.print=FALSE}
 

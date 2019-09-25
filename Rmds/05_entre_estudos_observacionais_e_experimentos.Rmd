@@ -1,15 +1,16 @@
 ---
-title: "MAT02010 - Tópicos Avançados em Estatística II"
+title: "EPI13 - Seminários de Doutorado III"
 subtitle: "Entre estudos observacionais e experimentos"
+fontsize: 10pt
 author: |
   | Rodrigo Citton P. dos Reis
   | `citton.padilha@ufrgs.br`
 institute: |
   | \textsc{Universidade Federal do Rio Grande do Sul}
   | \textsc{Instituto de Matemática e Estatística}
-  | \textsc{Departamento de Estatística}
+  | \textsc{Departamento de Estatística e Programa de Pós-Graduação em Epidemiologia}
 date: |
-  | Porto Alegre, 2019
+  | Vitória da Conquista, 2019
 ---
 
 # A distinção entre experimentos e estudos observacionais
