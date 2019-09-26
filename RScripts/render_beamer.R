@@ -7,7 +7,9 @@ pasta <- "Rmds"
 # arquivo <- "02_estrutura"
 # arquivo <- "03_inferencia_causal_em_experimentos_aleatorizados"
 # arquivo <- "05_entre_estudos_observacionais_e_experimentos"
-arquivo <- "01_OficinaDAG_PPGEpi"
+# arquivo <- "01_OficinaDAG_PPGEpi"
+# arquivo <- "02_OficinaDAG_PPGEpi"
+arquivo <- "03_OficinaDAG_PPGEpi"
 
 arquivo_rmd <- paste0(arquivo, ".Rmd")
 arquivo_pdf <- paste0(arquivo, ".pdf")
